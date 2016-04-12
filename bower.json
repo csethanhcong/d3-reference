@@ -1,0 +1,33 @@
+{
+  "name": "d3-chart-types",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Hieu Le <letrunghieu.cse09@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.5.5",
+    "jquery": "~2.1.4",
+    "font-awesome": "~4.4.0",
+    "bootstrap-sass": "~3.3.5",
+    "d3-tip": "~0.6.7",
+    "d3.dataset": "~0.4.1",
+    "koto": "~0.1.8",
+    "Bootflat": "~2.0.4",
+    "react": "~0.14.6",
+    "flux": "~2.1.1"
+  }
+}

@@ -1,0 +1,15 @@
+.linechart {
+    .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+    .axis {
+        font: 11px sans-serif;
+        path, line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.bar-histogram-chart {
+    .bar {
+        transition: opacity 0.3s linear;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .axis {
+        font: 11px sans-serif;
+        path, line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+    }
+}

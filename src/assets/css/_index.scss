@@ -1,0 +1,76 @@
+body {
+    background-color: $body-background-color;
+}
+
+.file-btn {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    & + label {
+        cursor: pointer;
+        color: #ABB7B7;
+        display: block;
+        padding: 1em 5px;
+        border: 1px dotted #ABB7B7;
+        text-align: center;
+    }
+
+    &:focus + label,
+    & + label:hover {
+        color: #6C7A89;
+        outline: 1px dotted #000;
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+}
+
+#wrap {
+    width: 100%;
+    overflow: hidden;
+    & > .navbar {
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+    #chart-area {
+        width: 100%;
+        float: left;
+        padding: $area-padding;
+        & > .panel {
+            margin-bottom: 0;
+        }
+        #chart {
+            #chart-canvas {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                svg {
+                    display: block;
+                    margin: 0 auto 10px;
+                }
+            }
+        }
+    }
+    #input-area {
+        width: $input-area-width - 1;
+        float: left;
+        margin-left: -$input-area-width;
+        padding: $area-padding;
+        #x-field, #y-fields {
+            font-family: Consolas;
+        }
+        #data {
+            font-family: Consolas;
+            font-size: 14px;
+        }
+    }
+}
+
+.axis {
+    path {
+        display: inline !important;
+    }
+}
